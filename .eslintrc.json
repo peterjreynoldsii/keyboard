@@ -1,0 +1,116 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": ["eslint:recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "plugins": ["import"],
+  "rules": {
+    "newline-per-chained-call": 2,
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "flatTernaryExpressions": false
+      }
+    ],
+    "brace-style": ["error", "stroustrup"],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "semi": ["error", "never"],
+    "no-unused-vars": ["error"],
+    "space-unary-ops": [
+      2,
+      {
+        "words": true,
+        "nonwords": false
+      }
+    ],
+    "no-trailing-spaces": ["error"],
+    "id-length": [
+      "error",
+      {
+        "min": 2,
+        "exceptions": ["x", "i", "e", "q", "_"]
+      }
+    ],
+    "comma-style": ["error", "last"],
+    "one-var": ["error", "never"],
+    "key-spacing": [
+      "error",
+      {
+        "mode": "strict",
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "block-spacing": ["error", "always"],
+    "space-infix-ops": ["error"],
+    "padded-blocks": [
+      "error",
+      {
+        "classes": "always",
+        "switches": "always"
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxBOF": 0,
+        "maxEOF": 1
+      }
+    ],
+    "eol-last": ["error", "always"],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "class"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "function"
+      },
+      {
+        "blankLine": "never",
+        "prev": ["cjs-import", "const", "let", "var"],
+        "next": ["cjs-import", "const", "let", "var"]
+      },
+      {
+        "blankLine": "any",
+        "prev": "import",
+        "next": "import"
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "array-bracket-spacing": ["error", "always"],
+    "space-in-parens": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "func-call-spacing": ["error", "never"],
+    "arrow-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "no-console": ["off"],
+    "comma-dangle": ["error", "never"]
+  }
+}
+
